@@ -11,7 +11,7 @@ ports = [1]
 servers = {}
 min_port = 30000
 max_port = 30010
-server_ip = "185.243.182.225"
+server_ip = "0.0.0.0"
 
 def get_port(sv_licenseKey):
     r = random.randrange(min_port, max_port)
