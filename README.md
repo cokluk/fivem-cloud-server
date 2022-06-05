@@ -7,3 +7,24 @@ ve ortalama performans veren bu sistem eğer tamamlansaydı beta aşamasında su
 
 Fivem desteklemediği için proje başlamadan bitti. Sistemi yaptıktan sonra öğrendim ki sadece Fivem bu sistemin kullanımını kısıtlayarak sadece "ZAP-Hosting"'e bu sistemi
 kullanabilir kılmış. Ben de bu projeyi bu aşamaya gelince sistemin çalışmayacağını anlayarak projeyi sonlandırıp kaynak kodunu paylaşma kararı aldım. Umarım birilerinin işine yarar.
+
+# Ne Nasıl Çalışıyor?
+
+| Request  | Method | Require | Response |
+| ------------- | ------------- | ------------- |  ------------- | 
+| requestSlot  |  GET |  sv_licenseKey | Boş bir sunucu rezerve eder |
+| stopServer  |  POST |  port | Portu kullanan threadları stoplar |
+
+ 
+
+# Değişkenler
+
+| Değişkenler  | Ne işe yaradıkları |
+| ------------- | ------------- |
+| ports  | Rezerve edilmiş portlar  |
+| servers[port]  | Rezerve edilmiş sunucu Thread'ı  |
+| min_port | Rezerve başlangıç portu  |
+| max_port | Rezerve bitiş portu  |
+| server_ip | Sunucu Ağ Adresi  |
+
+
